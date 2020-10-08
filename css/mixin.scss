@@ -1,0 +1,18 @@
+@mixin adaptiv($device) {
+    @if $device == mobile {
+        @media (max-width: 768px) {
+            @content
+        };
+    } @else if $device == tablet {
+        @media (max-width: 900px) {
+            @content
+        };
+    };
+};
+
+
+@mixin heightWidth($height, $width) {
+    height: $height;
+    width: $width;
+};
+
